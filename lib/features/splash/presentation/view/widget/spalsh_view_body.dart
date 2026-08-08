@@ -4,7 +4,6 @@ import 'package:bookly_app/features/home/presentation/view/home_view.dart';
 import 'package:bookly_app/features/splash/presentation/view/widget/sliding_text.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/state_manager.dart';
 
 class SpalshViewBody extends StatefulWidget {
   const SpalshViewBody({super.key});
