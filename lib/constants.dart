@@ -3,3 +3,5 @@
 const kPrimaryColor = Color(0xff100B20);
 
 const kTransitionDutation = Duration(microseconds: 250);
+
+const kGTSectraFine = 'GT Sectra Fine';
