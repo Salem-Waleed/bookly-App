@@ -14,8 +14,10 @@ class BookDetaileViewBody extends StatelessWidget {
   Widget build(BuildContext context) {
     var width = MediaQuery.of(context).size.width;
     return CustomScrollView(
+      
       slivers: [
         SliverFillRemaining(
+          hasScrollBody: false,
           child: Padding(
             padding: const EdgeInsets.symmetric(horizontal: 30),
             child: Column(
