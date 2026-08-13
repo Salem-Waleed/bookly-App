@@ -3,7 +3,6 @@ import 'package:bookly_app/features/home/presentation/view/widget/book_list_view
 import 'package:bookly_app/features/search/presentation/view/widget/custom_search_text_field.dart';
 import 'package:flutter/material.dart';
 
-
 class SearchViewBody extends StatelessWidget {
   const SearchViewBody({super.key});
 
@@ -12,18 +11,19 @@ class SearchViewBody extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 30),
       child: Column(
-        children: const[
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: const [
           CustomSearchTextField(),
+          SizedBox(height: 20),
           Text('Search Result', style: Style.textStyly18),
-           SizedBox(height: 20),
+          SizedBox(height: 10),
 
-        Expanded(child: SearchResultListView()),
-      
-      ]),
+          Expanded(child: SearchResultListView()),
+        ],
+      ),
     );
   }
 }
-
 
 class SearchResultListView extends StatelessWidget {
   const SearchResultListView({super.key});
@@ -39,6 +39,6 @@ class SearchResultListView extends StatelessWidget {
           child: BookListViewItem(),
         );
       },
-    );;
+    );
   }
 }

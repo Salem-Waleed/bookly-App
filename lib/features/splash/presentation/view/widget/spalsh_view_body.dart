@@ -1,10 +1,8 @@
-
 import 'package:bookly_app/core/Utils/app_router.dart';
 import 'package:bookly_app/core/Utils/assets.dart';
 import 'package:bookly_app/features/splash/presentation/view/widget/sliding_text.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-
 
 class SpalshViewBody extends StatefulWidget {
   const SpalshViewBody({super.key});
@@ -25,8 +23,6 @@ class _SpalshViewBodyState extends State<SpalshViewBody>
 
     navigateToHome();
   }
-
-  
 
   @override
   void dispose() {
@@ -62,9 +58,8 @@ class _SpalshViewBodyState extends State<SpalshViewBody>
   }
 
   void navigateToHome() {
-     Future.delayed(const Duration(seconds: 2), () {
-        GoRouter.of(context).push(AppRoute.kHomeView);
-      },
-    );
+    Future.delayed(const Duration(seconds: 2), () {
+      GoRouter.of(context).push(AppRoute.kHomeView);
+    });
   }
 }
