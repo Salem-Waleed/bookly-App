@@ -6,7 +6,7 @@ import 'package:flutter/material.dart';
 
 class BookDetailsSection extends StatelessWidget {
   const BookDetailsSection({super.key});
-
+  
   @override
   Widget build(BuildContext context) {
     var width = MediaQuery.of(context).size.width;
@@ -27,7 +27,10 @@ class BookDetailsSection extends StatelessWidget {
         ),
         const SizedBox(height: 6),
 
-        const BookRatting(mainAxisAlignment: MainAxisAlignment.center),
+        const BookRatting(
+          ratting: 10,
+          count: 10,
+          mainAxisAlignment: MainAxisAlignment.center),
         const SizedBox(height: 37),
         const BooksAction(),
       ],
